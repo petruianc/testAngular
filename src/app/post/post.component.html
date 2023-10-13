@@ -32,13 +32,13 @@
             minlength="5"
             maxlength="10" 
             >
-            <div *ngIf="fullName.errors">
+            <div *ngIf="fullName.errors?.['requierd']">
                <div class="alert alert-danger" *ngIf = 'fullName.touched && fullName.invalid'> FUllname is requierd...</div>
             </div>
-            <div *ngIf="fullName.errors">
+            <div *ngIf="fullName.errors?.['minlength']">
                <div class="alert alert-danger" *ngIf = 'fullName.touched && fullName.invalid'> FUllname minimum length is 5...</div>
             </div>
-            <div *ngIf="fullName.errors">
+            <div *ngIf="fullName.errors?.['maxlength']">
                <div class="alert alert-danger" *ngIf = 'fullName.touched && fullName.invalid'> FUllname maximum length is 10...</div>
             </div>
          </div>
