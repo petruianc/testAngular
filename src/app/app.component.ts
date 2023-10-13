@@ -1,6 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { PostComponent } from './post/post.component';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -76,6 +77,7 @@ export class AppComponent implements AfterViewInit{
   onClick(_status: any){
     this.stepForm = _status;
   }
+  
 }
 
 
